@@ -31,7 +31,7 @@ int main()
             high = mid -1;
 
     }
-    if(!findd) cout<<low;
+    if(!findd) cout<<"Sir,This element doesn't exist";
 
 
 
