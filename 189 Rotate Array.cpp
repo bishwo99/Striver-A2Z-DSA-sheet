@@ -4,14 +4,14 @@ using namespace std;
  void RotateArray(vector<int>&nums, int n, int k){
    k = k % n;
 
-   int tmp[k];
+   vector<int> tmp(k);
 
    for(int i = 0; i < k; i++)
    {
       tmp[i] = nums[i+(n-k)];
    }
 
-    for( int i = n ; i>= k; i-- )
+    for( int i = n-1 ; i>= k; i-- )
     {
       nums[i] = nums[i-k];
     }
